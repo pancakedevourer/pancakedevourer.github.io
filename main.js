@@ -1,30 +1,37 @@
 const repos = [
   {name: "g",   url: "https://github.com/pancakedevourer/g",   desc: "A C-like procedural and imperative programming language."},
   {name: "blib", url: "https://github.com/pancakedevourer/blib", desc: "Very small STB-style C library with convienience functions."},
-  {name: "mk", url: "https://github.com/pancakedevourer/mk", desc: "Very small C build system."},
+  {name: "build", url: "https://github.com/pancakedevourer/build", desc: "Very small C build system."},
 ];
 
-const h1 = document.createElement("h1");
-h1.textContent = "Repositories:";
-document.body.appendChild(h1);
+const header1 = document.createElement("h1");
+const header2 = document.createElement("h2");
+const paragraph = document.creatElement("p");
+const anchor = document.createElement("a");
+const card = document.createElement("div");
+
+paragraph.textContent = "pancakedevourer";
+paragraph.style.textAlign = "center";
+paragraph.style.marginBottom = "1rem";
+document.body.appendChild(paragraph)
+
+header2.textContent = "Repositories:";
+document.body.appendChild(header2);
 
 const grid = document.createElement("div");
 grid.className = "grid";
 
-for (const repo of repos) {
-    const card = document.createElement("div");
+for(const repo of repos)
+{
+    anchor.href = repo.url;
+    anchor.target = "_blank";
+    anchor.textContent = repo.name;
+
     card.className = "card";
-
-    const a = document.createElement("a");
-    a.href = repo.url;
-    a.target = "_blank";
-    a.textContent = repo.name;
-
-    const p = document.createElement("p");
     p.textContent = repo.desc;
 
-    card.appendChild(a);
-    card.appendChild(p);
+    card.appendChild(anchor);
+    card.appendChild(paragraph);
     grid.appendChild(card);
 }
 
