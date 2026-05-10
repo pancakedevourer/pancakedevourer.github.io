@@ -6,9 +6,6 @@ const repos = [
 
 const header1 = document.createElement("h1");
 const header2 = document.createElement("h2");
-const paragraph = document.creatElement("p");
-const anchor = document.createElement("a");
-const card = document.createElement("div");
 
 paragraph.textContent = "pancakedevourer";
 paragraph.style.textAlign = "center";
@@ -23,12 +20,16 @@ grid.className = "grid";
 
 for(const repo of repos)
 {
+    const paragraph = document.createElement("p");
+    const anchor = document.createElement("a");
+    const card = document.createElement("div");
+  
     anchor.href = repo.url;
     anchor.target = "_blank";
     anchor.textContent = repo.name;
 
     card.className = "card";
-    p.textContent = repo.desc;
+    paragraph.textContent = repo.desc;
 
     card.appendChild(anchor);
     card.appendChild(paragraph);
