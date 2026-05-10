@@ -1,7 +1,7 @@
 const repos = [
-  {name: "repo-name",   url: "https://github.com/user/repo-name",   desc: "Opis repozytorium."},
-  {name: "repo-name-2", url: "https://github.com/user/repo-name-2", desc: "Opis repozytorium."},
-  {name: "repo-name-3", url: "https://github.com/user/repo-name-3", desc: "Opis repozytorium."},
+  {name: "g",   url: "https://github.com/pancakedevourer/g",   desc: "A C-like procedural and imperative programming language."},
+  {name: "blib", url: "https://github.com/pancakedevourer/blib", desc: "Very small STB-style C library with convienience functions."},
+  {name: "mk", url: "https://github.com/pancakedevourer/mk", desc: "Very small C build system."},
 ];
 
 const h1 = document.createElement("h1");
