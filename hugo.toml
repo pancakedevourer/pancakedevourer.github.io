@@ -1,0 +1,4 @@
+baseURL = 'https://pancakedevourer.github.io'
+locale = 'en-us'
+title = 'pancakedevourer'
+theme = 'vintage-web-hugo-theme-1.2'
