@@ -34,7 +34,7 @@ theme = "vintage-web-hugo-theme-1.2"
   show_status_bar = true
   show_sidebar = true
   show_welcome_message = true
-  welcome_message = "All your site are belong to us."
+  welcome_message = "All your site are belong to us. There's this niche OS called Windows, it's basically only for games, no one would use it for real work. LINUX SUPREMACYYY!!!! Check out Void Linux! It's quite cool :)."
 
   # Content display.
   show_featured_sections = true
