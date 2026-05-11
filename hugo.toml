@@ -1,4 +1,61 @@
-baseURL = 'https://pancakedevourer.github.io'
-locale = 'en-us'
-title = 'pancakedevourer'
-theme = 'vintage-web-hugo-theme-1.2'
+baseURL = "https://pancakedevourer.github.io"
+languageCode = "en-us"
+title = "pancakedevourer"
+theme = "vintage-web-hugo-theme-1.2"
+
+[pagination]
+  pagerSize = 10
+  path = "page"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# Menu.
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 30
+
+# Theme parameters.
+[params]
+  # Site description.
+  description = "My personal site :)."
+  author = "pancakedevourer"
+
+  # Retro features.
+  show_browser_chrome = true
+  show_status_bar = true
+  show_sidebar = true
+  show_welcome_message = true
+  welcome_message = "All your site are belong to us."
+
+  # Content display.
+  show_featured_sections = true
+  show_stats = true
+  show_retro_elements = true
+  show_sharing = true
+
+  # Footer options.
+  show_retro_footer = true
+  show_build_info = false
+
+  # Sidebar options.
+  show_sidebar_stats = true
+  show_retro_sidebar = true
+  sidebar_content = "BURN WINDOWSSS!!! LINUX SUPREMACY!!!!"
+
+  # Social links.
+  [params.social]
+    github = "pancakedevourer"
+    email = "szajagaja@gmail.com"
+
+  # Repository, for edit links.
+  repo_url = "https://github.com/pancakedevourer/pancakedevourer.github.io"
+  edit_page = true
