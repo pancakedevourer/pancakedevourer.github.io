@@ -1,0 +1,16 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Consolas;
+    text-align: center;
+}
+
+html, body, .hvalign85 {
+    height: 85%;
+}
+
+.hvalign85 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
