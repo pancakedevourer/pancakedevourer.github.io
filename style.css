@@ -5,12 +5,14 @@ body {
     text-align: center;
 }
 
-html, body, .hvalign85 {
-    height: 85%;
+ul {
+    display: inline-block;
+    text-align: left;
 }
 
 .hvalign85 {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 85%;
 }
